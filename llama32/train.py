@@ -6,8 +6,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments,
 
 # Load base model
 model_name = "meta-llama/Llama-3.2-3B"  # adjust if using smaller version
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=True)
+model = AutoModelForCausalLM.from_pretrained(model_name, use_auth_token=True)
 
 # LoRA config
 lora_config = LoraConfig(

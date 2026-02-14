@@ -1,4 +1,4 @@
 FROM llama3.2
+ADAPTER ./adapter_model.bin
 PARAMETER temperature 0.2
 PARAMETER top_p 0.9
-TRAIN ./dataset.jsonl

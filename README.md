@@ -155,3 +155,12 @@ with open("dataset.jsonl", "w") as f:
 ```
 
 ---
+
+## NOTE on HF setup
+- create HF account
+- create access token
+- install HF cmd line
+- login to hf using cmd line
+- ennter access token
+- now hf stores login info in local machine after successful login to hf
+- that info is now gets used to download models from hf by transformers libraries

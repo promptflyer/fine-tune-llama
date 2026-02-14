@@ -1,0 +1,1 @@
+ollama create mydocs -f Modelfile
